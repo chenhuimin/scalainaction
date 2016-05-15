@@ -14,5 +14,5 @@ def ordinal(number:Int) = number match {
   case 8 => println("8th")
   case 9 => println("9th")
   case 10 => println("10th")
-  case _ => println("Cannot do beyond 10")
+//  case _ => println("Cannot do beyond 10")
 }

@@ -10,7 +10,7 @@ object LoopTillExample extends App {
     }
   }
 
-  var i = 10   
+  var i = 10
   loopTill (i > 0) {     
      println(i)
      i -= 1   

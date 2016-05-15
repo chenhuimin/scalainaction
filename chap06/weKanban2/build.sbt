@@ -1,4 +1,4 @@
-import com.github.siasia.WebPlugin._
+import com.earldouglas.xsbtwebplugin.WebPlugin
 
 name := "weKanban"
 
@@ -6,13 +6,13 @@ organization := "scalainaction"
 
 version := "0.2"
 
-scalaVersion := "2.10.0"
+scalaVersion := "2.10.6"
 
 scalacOptions ++= Seq("-unchecked", "-deprecation")
 
 resolvers ++= Seq(
- "Scala-Tools Maven2 Releases Repository" at "http://scala-tools.org/repo-releases",
- "Scala-Tools Maven2 Snapshots Repository" at "http://scala-tools.org/repo-snapshots"
+  "Scala-Tools Maven2 Releases Repository" at "http://scala-tools.org/repo-releases",
+  "Scala-Tools Maven2 Snapshots Repository" at "http://scala-tools.org/repo-snapshots"
 )
 
 libraryDependencies ++= Seq(
@@ -25,4 +25,6 @@ libraryDependencies ++= Seq(
   "org.squeryl" % "squeryl_2.10" % "0.9.5-6"
 )
 
-seq(webSettings :_*)
+WebPlugin.webSettings
+
+

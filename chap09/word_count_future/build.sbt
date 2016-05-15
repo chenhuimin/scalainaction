@@ -4,7 +4,7 @@ version := "1.0"
 
 organization := "Scala in Action"
 
-scalaVersion := "2.10.0" 
+scalaVersion := "2.10.6"
 
 resolvers ++= Seq(
   "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/"

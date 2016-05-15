@@ -9,7 +9,7 @@ object AkkaoogleBuild extends Build with ConfigureScalaBuild {
    .settings(startH2Task, stopH2Task)
    .settings(
 	  organization := "scalainaction",
-	  scalaVersion := "2.10.0",
+	  scalaVersion := "2.10.6",
 	  scalacOptions ++= Seq("-unchecked", "-deprecation"),
 
     resolvers += ("Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/"),

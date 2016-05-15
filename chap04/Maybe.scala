@@ -5,7 +5,7 @@ package chap04
 object MaybeExample {
 	sealed abstract class Maybe[+A] {
 	  def isEmpty: Boolean
-	  def get: A  
+	  def get: A
 	  def getOrElse[B >: A](default: B): B = {
 	    if(isEmpty) default else get
 	  }
@@ -19,6 +19,6 @@ object MaybeExample {
 	case object Nil extends Maybe[scala.Nothing] {
 	  def isEmpty = true
 	  def get = throw new NoSuchElementException("Nil.get")
-	}	
+	}
 }
 
